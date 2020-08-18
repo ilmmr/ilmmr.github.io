@@ -1,10 +1,14 @@
 body {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 40px;
   line-height: 1.8;
-  color: #b3b3b3;
+  color: #333333;
   background: #fff;
+}
+
+ul {
+    list-style-type: none;
 }
 
 a {
