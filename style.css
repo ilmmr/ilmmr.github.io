@@ -5,7 +5,7 @@ body {
   /* height: 100%; */
   line-height: 1.8;
   color: #333333;
-  background: #fff;
+ /* background: #fff; */
   background-image: url(img/profile_big.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
