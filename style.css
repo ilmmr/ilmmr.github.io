@@ -200,5 +200,5 @@ aside {
 main {
   float: left;
   padding: 7%;
-  position: relative;
+  position: absolute;
 }
