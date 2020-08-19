@@ -1,11 +1,15 @@
-html,body {
+body {
   /*font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 16px;*/
-  height: 100%;
+  /* height: 100%; */
   line-height: 1.8;
   color: #333333;
   background: #fff;
+  background-image: url(img/profile_big.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .btn {
