@@ -1,3 +1,4 @@
-  167 Aug 20 14:16 comp.sh
+  167 Aug 20 14:18 comp.sh
  1.1M Aug 20 14:04 IntroduçãoLinguagens.pdf
     0 Aug 19 13:12 pl.html
+ 2.3K Aug 20 14:18 so.html
