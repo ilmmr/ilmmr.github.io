@@ -1,0 +1,8 @@
+total 5.1M
+drwxr-xr-x 3 luis users 4.0K Aug 20 14:12 .
+drwxr-xr-x 4 luis users 4.0K Aug 19 13:11 ..
+-rwxr-xr-x 1 luis users  166 Aug 20 14:12 comp.sh
+-rw-r--r-- 1 luis users 4.0M Aug 20 13:31 GestaoMemoria.pdf
+-rw-r--r-- 1 luis users 1.1M Aug 20 13:31 GestaoProcessos.pdf
+drwxr-xr-x 2 luis users 4.0K Aug 20 13:58 notforgit
+-rw-r--r-- 1 luis users 2.6K Aug 20 14:08 so.html
