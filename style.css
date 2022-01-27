@@ -24,7 +24,7 @@ body {
   padding: 16px 20px;
   font-size: 20px;
   cursor: pointer;
-  display: inline-block;
+  display: inline;
 }
 
 .btn:hover {
