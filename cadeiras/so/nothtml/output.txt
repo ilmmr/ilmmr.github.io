@@ -1,0 +1,4 @@
+  125 Aug 21 15:53 comp.sh
+ 4.0M Aug 20 13:31 GestaoMemoria.pdf
+ 1.1M Aug 20 13:31 GestaoProcessos.pdf
+ 3.1K Aug 21 15:56 so.html
