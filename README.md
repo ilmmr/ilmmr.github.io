@@ -9,5 +9,5 @@ My [Personal Website](luis1ribeiro.github.io/) is allocated in this repository t
 Go ahead and check it! (ง ͠° ͟ل͜ ͡°)ง
 
 <p align="center">
-   <img width="100%" src="img/site.png">
+   <img width="100%" src="files/site.png">
 </p>

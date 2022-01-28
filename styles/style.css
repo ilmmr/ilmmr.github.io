@@ -11,7 +11,7 @@ body {
   line-height: 1.8;
   color: #333333;
  /* background: #fff; */
-  background-image: url(img/profile_big.jpg);
+  background-image: url(../files/profile_big.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: right;
