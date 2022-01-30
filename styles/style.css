@@ -26,6 +26,15 @@ body {
   display: inline;
 }
 
+table { 
+  border-spacing: 10px 15px;
+  font-size: 12px;
+  font-family: Consolas,monospace;
+}
+
+.yo {
+  text-decoration: underline;
+}
 
 pre {
   white-space: pre-wrap;
