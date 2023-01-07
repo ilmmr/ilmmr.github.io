@@ -1,15 +1,15 @@
 import React from "react";
 import Image from "next/image";
-import { ButtonBG, ButtonNoBG } from './buttons';
 
 export default function Header() {
     return (
         <header>
-            <div className="header flex light-bg">
-                <div>
+            <div className="header flex dark-bg">
+                <div style={{textAlign:"center"}}>
+                    <Image src="/pic3.png" width={250} height={250} alt="luis"/> 
                     <h3 className="white">Luís Ribeiro</h3>
                     <h1 className="white">Software Engineer</h1>
-                    <p className="gray"><i>"Coding is to programming as typing is to writing."</i></p>
+                    <p className="gray"><i>&quote;Coding is to programming as typing is to writing.&quote;</i></p>
                     <span>
                         <a href="/CurriculumVitae.pdf" target="blank">
                             <button className="buttonbg">Curriculum Vitae</button>
@@ -19,7 +19,6 @@ export default function Header() {
                         </a>
                     </span>
                 </div>
-                <img src="/ProfilePic.png" width={450} height={450} alt="luis"/> 
             </div>
         </header>
     )

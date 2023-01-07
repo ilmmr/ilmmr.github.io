@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image, { StaticImageData } from "next/image";
+import { url } from "inspector";
+import { Container, ContainerTop, ContainerBottom } from "./styles";
 
 export default function About() {
     const year = new Date().getFullYear();
+    const [showGh, setShowGh] = React.useState("/icons/github.svg");
+    const [showLI, setShowLI] = React.useState("/icons/linkedin.svg");
     return (
         <section id="about" className="dark-bg">
             <div className="flex">
@@ -29,26 +33,68 @@ export default function About() {
                 
                 <div className="flex-full about-text">
                     <h5 className="gray">ABOUT ME</h5>
-                    <h1 className="white">👋 Hi there, I&#39;m Luís Ribeiro</h1>
-                    <p className="gray">💻 I'm an engineer grad with a Masters on Informatics Engineering @UMinho. </p>
+                    <h1 className="white"><span className="wave">👋</span> Hi there, I&#39;m Luís Ribeiro</h1>
+                    <p className="gray">💻 I&#39;m an engineer grad with a Masters on Informatics Engineering @UMinho.</p>
                     <br></br> 
-                    <p className="gray"><b>λ.</b> My areas of interest fall under the umbrella of <b>Language Processing</b> and <b>Formal Methods</b>.</p>
+                    <p className="gray">My areas of interest fall under the umbrella of <b>Language Processing</b> and <b>Formal Methods</b>.</p>
                     <br></br>
-                    <h3 className="white">"Beauty is our business!"</h3>
+                    <h3 className="white"><i>&quote;Beauty is our business!&quote;</i></h3>
                     <p className="gray">🚀 My ultimate goal is to keep extending my knowledge in Computer Science, especially in the study of real-case scenarios, as the ones in distributed systems while making use of Formal Methods.</p>
-                    <ul className="flex">
-                    <li>
-                        <a href="https://www.linkedin.com/in/lmmribeiro" target="_blank" rel="noreferrer">
-                            <Image src="/icons/linkedin.svg" width={40} height={40} alt="linkedin-icon" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/ilmmr" target="_blank" rel="noreferrer">
-                            <Image src="/icons/github.svg" width={40} height={40} alt="github-icon" />
-                        </a>
-                    </li>
-                    </ul>
+                    
+                    <br></br><br></br>
+                    <h5 className="gray">SKILLS</h5>
+                    <Container>
+                    <ContainerTop>
+        <a >
+          <div>
+            <p>Model &ensp;&ensp;Checking</p>
+          </div>
+        </a>
+        <a >
+          <div>
+            <p>Property Specification</p>
+          </div>
+        </a>
+        <a>
+          <div>
+            <p>Parsing Grammars</p>
+          </div>
+        </a>
+        <a >
+          <div>
+            <p>Language Scripting</p>
+          </div>
+        </a>
+        <a >
+          <div>
+            <Image src="/images/python.png"/>
+            <p>Python</p>
+          </div>
+        </a>
+        <a >
+          <div>
+            <Image src="/images/haskell.png" />
+            <p>Haskell</p>
+          </div>
+        </a>
+        <a>
+          <div>
+            <Image src="/images/js.png" />
+            <p>JavaScript</p>
+          </div>
+        </a>
+        <a>
+          <div>
+            <Image src="/images/C.png"/>
+            <p>C</p>
+          </div>
+        </a>
+
+      </ContainerTop>
+      </Container>
+                    
                 </div>
+                
             </div>
         </section>
     )

@@ -83,6 +83,11 @@ button {
     cursor: pointer;
 }
 
+footer img:hover {
+  filter: invert(55%) sepia(63%) saturate(400%) hue-rotate(100deg) brightness(120%) contrast(60%);
+  transition: 0.5s;
+}
+
 /* Header */
 nav {
   padding: 1.1rem 5rem;
@@ -98,8 +103,8 @@ nav ul li {
   font-weight: 600;
 }
 .header {
-  justify-content: space-between;
-  padding: 1.1rem 5rem 0rem 5rem;
+  justify-content:center;
+  padding: 5rem 5rem 0rem 5rem;
 }
 .header h1 {
   margin: auto;
@@ -157,12 +162,11 @@ nav ul li {
   margin-bottom: 1rem;
   font-weight: 500;
   font-size: 1.5rem;
-  font-style: italic;
   text-align: justify;
 }
 .about-text p {
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 1.0rem;
   text-align: justify;
 }
 .partners {
@@ -171,17 +175,20 @@ nav ul li {
 
 /* Footer */
 footer {
-  padding: 2rem 5rem;
+  padding: 3rem 3rem;
+}
+footer div {
+  position:absolute;
+  right:5%;
 }
 footer span {
+  margin-left: 1rem;
   font-size: 1rem;
-  font-weight: 500;
-  text-transform: uppercase;
+  font-weight: 400;
 }
-main ul {
-  position: absolute;
+footer ul {
+  position: relative;
   list-style-type: none;
-  right:5%;
   margin-left: 1rem;
 }
 
@@ -192,6 +199,9 @@ main ul {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  li a {
+    transition: all 0.5s;
   }
   /* Header */
   nav {
@@ -217,13 +227,31 @@ main ul {
     justify-content: space-between !important;
   }
   /* Footer */
-  main ul {
-    position: absolute;
-    padding: 0;
-    right:0;    
+  footer ul {
+    position: relative;
+    padding: 0;   
     margin-left:0;
-    column-gap: 1rem;
+    column-gap: 2rem;
     flex-direction: row !important;
   }
 
+}
+
+.wave {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
 }
