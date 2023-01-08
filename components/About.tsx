@@ -67,25 +67,25 @@ export default function About() {
         </a>
         <a >
           <div>
-            <Image src="/images/python.png"/>
+            <img src="/images/python.png"/>
             <p>Python</p>
           </div>
         </a>
         <a >
           <div>
-            <Image src="/images/haskell.png" />
+            <img src="/images/haskell.png" />
             <p>Haskell</p>
           </div>
         </a>
         <a>
           <div>
-            <Image src="/images/js.png" />
+            <img src="/images/js.png" />
             <p>JavaScript</p>
           </div>
         </a>
         <a>
           <div>
-            <Image src="/images/C.png"/>
+            <img src="/images/C.png"/>
             <p>C</p>
           </div>
         </a>

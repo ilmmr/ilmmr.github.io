@@ -6,7 +6,7 @@ export default function Header() {
         <header>
             <div className="header flex dark-bg">
                 <div style={{textAlign:"center"}}>
-                    <Image src="/pic3.png" width={250} height={250} alt="luis"/> 
+                    <img src="/pic3.png" width={250} height={250} alt="luis"/> 
                     <h3 className="white">Luís Ribeiro</h3>
                     <h1 className="white">Software Engineer</h1>
                     <p className="gray"><i>&quote;Coding is to programming as typing is to writing.&quote;</i></p>
