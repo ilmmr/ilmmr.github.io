@@ -48,6 +48,7 @@ export const ContainerTop = styled.div`
       box-shadow: 0px 0px 5px 1px #FFFFFF;    
     }
     p{
+      margin-right: auto;
       color: white;
     }
   }
@@ -64,6 +65,9 @@ export const ContainerTop = styled.div`
     font-weight: 500;
     @media screen and (max-width: 426px){
       width: 90vw;
+    }
+    p {
+      margin-right: auto;
     }
     img{
       margin-right: auto;

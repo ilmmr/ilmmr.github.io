@@ -32,7 +32,6 @@ const Home: NextPage = () => {
         {/* About */}
         <About />
       </main>
-      <Footer />
     </>
   )
 }

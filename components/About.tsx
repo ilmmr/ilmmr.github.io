@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Image, { StaticImageData } from "next/image";
 import { url } from "inspector";
-import { Container, ContainerTop, ContainerBottom } from "./styles";
+import {Container, ContainerTop} from "./styles.js";
 
 export default function About() {
     const year = new Date().getFullYear();
@@ -38,63 +38,49 @@ export default function About() {
                     <br></br> 
                     <p className="gray">My areas of interest fall under the umbrella of <b>Language Processing</b> and <b>Formal Methods</b>.</p>
                     <br></br>
-                    <h3 className="white"><i>&quote;Beauty is our business!&quote;</i></h3>
+                    <h3 className="white"><i>&#34;Beauty is our business!&#34;</i></h3>
                     <p className="gray">🚀 My ultimate goal is to keep extending my knowledge in Computer Science, especially in the study of real-case scenarios, as the ones in distributed systems while making use of Formal Methods.</p>
                     
                     <br></br><br></br>
                     <h5 className="gray">SKILLS</h5>
-                    <Container>
-                    <ContainerTop>
-        <a >
-          <div>
-            <p>Model &ensp;&ensp;Checking</p>
-          </div>
-        </a>
-        <a >
-          <div>
-            <p>Property Specification</p>
-          </div>
-        </a>
-        <a>
-          <div>
-            <p>Parsing Grammars</p>
-          </div>
-        </a>
-        <a >
-          <div>
-            <p>Language Scripting</p>
-          </div>
-        </a>
-        <a >
-          <div>
-            <img src="/images/python.png"/>
-            <p>Python</p>
-          </div>
-        </a>
-        <a >
-          <div>
-            <img src="/images/haskell.png" />
-            <p>Haskell</p>
-          </div>
-        </a>
-        <a>
-          <div>
-            <img src="/images/js.png" />
-            <p>JavaScript</p>
-          </div>
-        </a>
-        <a>
-          <div>
-            <img src="/images/C.png"/>
-            <p>C</p>
-          </div>
-        </a>
 
-      </ContainerTop>
-      </Container>
-                    
+                    <section className="about-container">
+                      <div className="skill-card">
+                      <SkillCard
+                        icon="/images/mc.png"
+                        description="Model Checking"
+                        />
+                      <SkillCard
+                        icon="/images/pencil.png"
+                        description="Property Specification"
+                        />
+                      <SkillCard
+                        icon="/images/pg.png"
+                        description="Parsing Grammars"
+                        />
+                      <SkillCard
+                        icon="/images/script.png"
+                        description="Language Scripting"
+                        />
+                      <SkillCard
+                        icon="/images/haskell.png"
+                        description="Haskell"
+                        />
+                      <SkillCard
+                        icon="/images/python.png"
+                        description="Python"
+                        />
+                      <SkillCard
+                        icon="/images/js.png"
+                        description="JavaScript"
+                        />
+                      <SkillCard
+                        icon="/images/cpu.png"
+                        description="Verilog"
+                        />
+                      </div>
+                    </section>
                 </div>
-                
             </div>
         </section>
     )
@@ -120,4 +106,18 @@ function AboutCard ({title, icon, description, url} : Props) {
             </a>
         </div>
     )
+}
+
+type Skill = {
+  description: string,
+  icon?: string | StaticImageData,
+}
+
+function SkillCard ({description, icon} : Skill) {
+  return(
+      <div className="light-bg">
+          <p className="white">{description}</p>
+          {icon && <Image src={icon} width={32} height={32}/> }
+      </div>
+  )
 }
