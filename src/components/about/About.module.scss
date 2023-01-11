@@ -1,0 +1,66 @@
+@import "../../variables.modules";
+
+.about {
+  padding: 5rem 5rem 0rem 5rem;
+  display:"flex";
+  align-content:"center"; 
+  text-align:"center";
+  min-height: 100vh;
+  justify-content: space-between;
+}
+
+.f {
+  position: absolute;
+  text-align:"center";
+}
+
+.pink {
+  color: $pink;
+}
+
+.green {
+  color: $green;
+}
+
+.skills {
+  columns: 1;
+  @media only screen and (min-width: 940px) {
+    columns: 2;
+  }
+
+  li {
+    margin: 0;
+    line-height: 1.75;
+  }
+}
+
+.wave {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+
+@media (max-width: 768px) {
+  .terminal {
+    width: 100%;
+  }
+  .terminals {
+    flex-direction: column;
+  }
+  .textTerminal {
+    font-size: 0.9rem;
+  }
+}
