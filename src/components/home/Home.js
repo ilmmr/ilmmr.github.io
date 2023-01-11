@@ -65,8 +65,7 @@ export default function Home({darkMode}) {
    const color = darkMode ? "#f8f8f8" : "#1f1f1f";
    return (
       <Stack component={'main'} display="flex" textAlign={"center"} alignItems={'center'} spacing={2}>
-         <Box className={classNames( Style.shadowed)} alt={'image of developer'} style={{background: info.gradient}} component={'img'} src={me} width={{xs: '40vh', md: '40vh'}}
-              height={{xs: '40vh', md: '40vh'}}
+         <Box className={classNames(Style.photo, Style.shadowed)} alt={'image of developer'} style={{background: info.gradient}} component={'img'} src={me}
               borderRadius={'50%'} p={'0.75rem'}/>
          <h3>{info.firstName} {info.lastName}</h3>
          <h1>{info.position}</h1>
