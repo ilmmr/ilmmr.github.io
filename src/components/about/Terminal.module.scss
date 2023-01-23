@@ -29,6 +29,14 @@ i {
   }
 }
 
+@media (max-width: 768px) {
+  .terminal {
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+}
+
 @keyframes changeColors {
   0% {
     color: #00a47f;

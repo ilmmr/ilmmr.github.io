@@ -9,7 +9,7 @@ function Terminal(props) {
    const {text} = props;
 
    return (
-      <Box width="100%" className={classNames(Style.terminal, Style.shadowed)}  borderRadius={'0.5rem'} mb="2rem" mr="1rem" ml="1rem">
+      <Box width="100%" className={classNames(Style.terminal, Style.shadowed)}  borderRadius={'0.5rem'} mb="2rem" mr="1.5%" ml="1.5%">
          <Box sx={{backgroundColor: '#8c8c8c'}} p={'0.5rem'} borderRadius={'0.5rem 0.5rem 0 0'}
               fontSize={'1rem'}>
             <i className={classNames(iconClass, Style.red)}/>

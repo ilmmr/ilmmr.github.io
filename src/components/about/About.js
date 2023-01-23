@@ -63,10 +63,10 @@ export default function About() {
             <p><span style={{color: info.baseColor}}>programming <span
                 className={Style.green}></span> $</span> cat languages</p>
             <div style={{fontSize: "1rem"}}>
-          <p>{info.programming}</p>
-          <p>{info.programming1}</p>
-          <p>{info.programmingl}</p>
-          </div>
+              <p>{info.programming}</p>
+              <p>{info.programming1}</p>
+              <p>{info.programmingl}</p>
+            </div>
         </>;
     }
 
@@ -89,9 +89,9 @@ export default function About() {
           <p><span style={{color: info.baseColor}}>me <span
               className={Style.green}></span> $</span> cat activities</p>
           <div style={{fontSize: "1rem"}}>
-          <p>{info.activities1}</p>
-          <p>{info.activities2}</p>
-          <p>{info.activities3}</p>
+            <p>{info.activities1}</p>
+            <p>{info.activities2}</p>
+            <p>{info.activities3}</p>
           </div>
       </>;
     }
@@ -104,10 +104,10 @@ export default function About() {
               className={Style.green}></span> $</span> cat about</p>
           <div style={{fontSize: "1rem"}}>
           <p>Greetings  <Box className={Style.wave}>👋</Box></p>
-          <p>{info.bio3} {info.bio1}</p>
-          <p>{info.bio2}</p>
-          <p>{info.goal}</p>
-          <p style={{textAlign:"center", fontStyle:"italic", color:"#777777"}}>&#34;Beauty is our business.&#34;</p>
+            <p>{info.bio3} {info.bio1}</p>
+            <p>{info.bio2}</p>
+            <p>{info.goal}</p>
+            <p style={{textAlign:"center", fontStyle:"italic", color:"#777777"}}>&#34;Beauty is our business.&#34;</p>
           </div>
       </>;
    }
