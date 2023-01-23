@@ -46,7 +46,7 @@ export const info = {
         }
     ],
     intro: "Hi there, my name is Luís",
-    short: "📍 Graduated in Braga, Portugal. Now living in Copenhagen, Denmark",
+    short: "📍 Graduated in Braga, Portugal.",
     short1: "👨‍💻 Currently working as researcher @DTU in Copenhagen",
     bio1: "I am also an engineer grad with a Masters on Software Engineering @UMinho.",
     bio2: "When it comes to computing, I am very enthusiastic with the appliance of Formal Methods in software development.",

@@ -114,13 +114,14 @@ export default function About() {
 
     return (
         <div className={classNames(Style.about)} id="about">
+            <br></br><br></br><br></br><br></br>
             <ArrowU>
                 <a href="#home"><span></span></a>
             </ArrowU>
             <br></br><br></br>
             <h2>{info.intro}</h2>
+            <Typography textAlign="center">👨‍💻 From @UMinho</Typography>
             <Typography textAlign="center">{info.short}</Typography>
-            <Typography textAlign="center">{info.short1}</Typography>
             <Box display={'flex'} className={Style.terminals} justifyContent={'center'} alignItems={'center'} mt={'3rem'}>
                 <Terminal text={aboutMe()}/>
                 <Terminal text={hoobies()}/>
