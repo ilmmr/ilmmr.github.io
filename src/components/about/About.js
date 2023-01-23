@@ -123,11 +123,11 @@ export default function About() {
             <Typography textAlign="center">{info.short}</Typography>
             <Box display={'flex'} className={Style.terminals} justifyContent={'center'} alignItems={'center'} mt={'3rem'}>
                 <Terminal text={aboutMe()}/>
-                <Terminal text={hoobies()}/>
+                <Terminal text={miscText()}/>
             </Box>
             <Box display={'flex'} className={Style.terminals} justifyContent={'center'} alignItems={'center'}>
                 <Terminal text={skillsText()}/>
-                <Terminal text={miscText()}/>
+                <Terminal text={hoobies()}/>
             </Box>
         </div>
     )
