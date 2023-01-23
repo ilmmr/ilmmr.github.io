@@ -90,7 +90,6 @@ export default function About() {
               className={Style.green}></span> $</span> cat activities</p>
           <div style={{fontSize: "1rem"}}>
             <p>{info.activities1}</p>
-            <p>{info.activities2}</p>
             <p>{info.activities3}</p>
           </div>
       </>;
@@ -120,7 +119,7 @@ export default function About() {
             </ArrowU>
             <br></br><br></br>
             <h2>{info.intro}</h2>
-            <Typography textAlign="center">👨‍💻 From @UMinho</Typography>
+            <Typography textAlign="center">👨‍💻 From @UMinho.</Typography>
             <Typography textAlign="center">{info.short}</Typography>
             <Box display={'flex'} className={Style.terminals} justifyContent={'center'} alignItems={'center'} mt={'3rem'}>
                 <Terminal text={aboutMe()}/>
