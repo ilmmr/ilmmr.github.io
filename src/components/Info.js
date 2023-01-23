@@ -45,12 +45,21 @@ export const info = {
             label: 'email'
         }
     ],
-    intro: "Hi there, My name is Luís",
-    bio1: "💻 An engineer grad with a Masters on Informatics Engineering @UMinho.",
-    bio2: "I am very enthusiastic with the appliance of Formal Methods in computing.",
-    goal:"🚀 My ultimate goal is to keep extending my knowledge in Computer Science, especially in the study of AI, while making use of Formal Methods to achieve correctness.",
-    programming: [
-        '⮕ python', '⮕ haskell', '⮕ javascript', '⮕ java'
+    intro: "Hi there, my name is Luís",
+    short: "📍 Graduated in Braga, Portugal. Now living in Copenhagen, Denmark",
+    short1: "👨‍💻 Currently working as researcher @DTU in Copenhagen",
+    bio1: "I am also an engineer grad with a Masters on Software Engineering @UMinho.",
+    bio2: "When it comes to computing, I am very enthusiastic with the appliance of Formal Methods in software development.",
+    bio3: "I am Luís, a young adult that is driven by other life and culture experiences!",
+    goal: "My goal is to keep extending my knowledge in Computer Science, especially in the study realm of AI and Formal Methods.",
+    activities1: "Besides research, I usually try to keep both my mind and body occupied. I regularly exercise, where any sport is welcomed. I also enjoy reading, from the basics of Computer Science to Philosophy.",
+    activities2: "Additionally, to build a so-called online portfolio, I usually try to keep my network updated on LinkedIn. I also created a 5-minute weekly podcast, where I share the beauty of knowing nothing.",    
+    activities3: "",
+    programming: "I am very versatile when it comes to programming languages. During my academic years, I have experienced multiple programming paradigms: From functional and declarative to imperative and object oriented.",
+    programming1: "However, the languages that I am most familiar with are:",
+    programmingl:
+    [
+        '⮕ python, haskell, javascript, java, and C'
     ],
     interests: [
         {
@@ -58,11 +67,15 @@ export const info = {
             emoji: '⮕'
         },
         {
-            label: 'Software Correctness',
+            label: 'Artificial Inteligence',
             emoji: '⮕'
         },
         {
-            label: 'Artificial Inteligence',
+            label: 'Computation Theory',
+            emoji: '⮕'
+        },
+        {
+            label: 'Philosophy',
             emoji: '⮕'
         }
 // Same as above, change the emojis to match / relate to your hobbies or interests.

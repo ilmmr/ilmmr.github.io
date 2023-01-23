@@ -1,14 +1,15 @@
 import React from 'react';
 import Style from './About.module.scss';
 import Terminal from "./Terminal";
-import {Box, Stack, Typography} from "@mui/material";
+import {Box, Typography} from "@mui/material";
 import {info} from "../Info";
 import styled from "styled-components";
+import classNames from 'classnames';
 
 const ArrowU = styled.div`
 a span {
    position: absolute;
-   bottom: auto;
+   top: auto;
    left: 50%;
    width: 24px;
    height: 24px;
@@ -20,6 +21,8 @@ a span {
    -webkit-animation: aru 1.5s infinite;
    animation: aru 1.5s infinite;
    box-sizing: border-box;
+   transition: 2s all ease;
+   animation-delay: 0.75s;
  }
  @-webkit-keyframes aru {
    0% {
@@ -51,21 +54,19 @@ a span {
 `
 
 export default function About() {
-    const firstName = info.firstName.toLowerCase()
     const nickname  = info.nickname.toLowerCase()
-    const year = new Date().getFullYear();
 
     function skillsText() {
         return <>
             <p><span style={{color: info.baseColor}}>{nickname} $</span> cd programming
             </p>
             <p><span style={{color: info.baseColor}}>programming <span
-                className={Style.green}></span> $</span> ls</p>
-            <ul>
-                {info.programming.map((skill, index) => (
-                    <li key={index}>{skill}</li>
-                ))}
-            </ul>
+                className={Style.green}></span> $</span> cat languages</p>
+            <div style={{fontSize: "1rem"}}>
+          <p>{info.programming}</p>
+          <p>{info.programming1}</p>
+          <p>{info.programmingl}</p>
+          </div>
         </>;
     }
 
@@ -74,7 +75,7 @@ export default function About() {
             <p><span style={{color: info.baseColor}}>{nickname} $</span> cd interests</p>
             <p><span style={{color: info.baseColor}}>interests <span
                 className={Style.green}></span> $</span> ls</p>
-            <ul>
+            <ul style={{fontSize: "1rem"}}>
                 {info.interests.map((hobby, index) => (
                     <li key={index}><Box component={'span'} mr={'1rem'}>{hobby.emoji}</Box>{hobby.label}</li>
                 ))}
@@ -82,17 +83,49 @@ export default function About() {
         </>;
     }
 
+    function hoobies() {
+      return <>
+          <p><span style={{color: info.baseColor}}>{nickname} $</span> cd me</p>
+          <p><span style={{color: info.baseColor}}>me <span
+              className={Style.green}></span> $</span> cat activities</p>
+          <div style={{fontSize: "1rem"}}>
+          <p>{info.activities1}</p>
+          <p>{info.activities2}</p>
+          <p>{info.activities3}</p>
+          </div>
+      </>;
+    }
+
+
+    function aboutMe() {
+      return <>
+          <p><span style={{color: info.baseColor}}>{nickname} $</span> cd me</p>
+          <p><span style={{color: info.baseColor}}>me <span
+              className={Style.green}></span> $</span> cat about</p>
+          <div style={{fontSize: "1rem"}}>
+          <p>Greetings  <Box className={Style.wave}>👋</Box></p>
+          <p>{info.bio3} {info.bio1}</p>
+          <p>{info.bio2}</p>
+          <p>{info.goal}</p>
+          <p style={{textAlign:"center", fontStyle:"italic", color:"#777777"}}>&#34;Beauty is our business.&#34;</p>
+          </div>
+      </>;
+   }
+
     return (
-        <div className={Style.about} id="about">
+        <div className={classNames(Style.about)} id="about">
             <ArrowU>
                 <a href="#home"><span></span></a>
             </ArrowU>
             <br></br><br></br>
-            <h2>{info.intro} <Box className={Style.wave}>👋</Box></h2>
-            <Typography textAlign="center">{info.bio1}</Typography>
-            <Typography textAlign="center">{info.bio2}</Typography>
-            <Typography textAlign="center" fontStyle="italic" color="#777777">&#34;Beauty is our business.&#34;</Typography>
+            <h2>{info.intro}</h2>
+            <Typography textAlign="center">{info.short}</Typography>
+            <Typography textAlign="center">{info.short1}</Typography>
             <Box display={'flex'} className={Style.terminals} justifyContent={'center'} alignItems={'center'} mt={'3rem'}>
+                <Terminal text={aboutMe()}/>
+                <Terminal text={hoobies()}/>
+            </Box>
+            <Box display={'flex'} className={Style.terminals} justifyContent={'center'} alignItems={'center'}>
                 <Terminal text={skillsText()}/>
                 <Terminal text={miscText()}/>
             </Box>

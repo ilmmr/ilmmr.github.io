@@ -21,6 +21,7 @@ a span {
    transform: rotate(-45deg);
    -webkit-animation: ard 1.5s infinite;
    animation: ard 1.5s infinite;
+   transition: 2s all ease;
    box-sizing: border-box;
  }
  @-webkit-keyframes ard {
