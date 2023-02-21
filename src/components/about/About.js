@@ -83,14 +83,13 @@ export default function About() {
         </>;
     }
 
-    function hoobies() {
+    function activities() {
       return <>
           <p><span style={{color: info.baseColor}}>{nickname} $</span> cd me</p>
           <p><span style={{color: info.baseColor}}>me <span
               className={Style.green}></span> $</span> cat activities</p>
           <div style={{fontSize: "1rem"}}>
             <p>{info.activities1}</p>
-            <p>{info.activities3}</p>
           </div>
       </>;
     }
@@ -105,7 +104,6 @@ export default function About() {
           <p>Greetings  <Box className={Style.wave}>👋</Box></p>
             <p>{info.bio3} {info.bio1}</p>
             <p>{info.bio2}</p>
-            <p>{info.goal}</p>
             <p style={{textAlign:"center", fontStyle:"italic", color:"#777777"}}>&#34;Beauty is our business.&#34;</p>
           </div>
       </>;
@@ -119,15 +117,11 @@ export default function About() {
             </ArrowU>
             <br></br><br></br>
             <h2>{info.intro}</h2>
-            <Typography textAlign="center">👨‍💻 From @UMinho.</Typography>
             <Typography textAlign="center">{info.short}</Typography>
+            <Typography textAlign="center">{info.short1}</Typography>
             <Box display={'flex'} className={Style.terminals} justifyContent={'center'} alignItems={'center'} mt={'3rem'}>
                 <Terminal text={aboutMe()}/>
-                <Terminal text={miscText()}/>
-            </Box>
-            <Box display={'flex'} className={Style.terminals} justifyContent={'center'} alignItems={'center'}>
-                <Terminal text={skillsText()}/>
-                <Terminal text={hoobies()}/>
+                <Terminal text={activities()}/>
             </Box>
         </div>
     )
