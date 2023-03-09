@@ -26,7 +26,7 @@ export const info = {
     selfPortrait: self, // don't change this unless you want to name your self-portrait in the "img" folder something else!
     gradient: `-webkit-linear-gradient(135deg, ${colors})`, // don't change this either
     baseColor: colors[0],
-    quote1: "&#34;Coding is to programming as typing is to writing.&#34;",
+    quote1: "&#34;Coding is to programming what typing is to writing.&#34;",
     quote2: "&#34;Beauty is our business&#34;",
     socials: [
         {
