@@ -73,7 +73,7 @@ export default function Home({darkMode}) {
          <a href={CV} target="blank">
             <button className={classNames(Style.shadowed)}>Curriculum Vitae</button>
          </a>
-         <Typography fontStyle="italic" color="#777777">&#34;Coding is to programming as typing is to writing.&#34;</Typography>
+         <Typography fontStyle="italic" color="#777777">&#34;Coding is to programming what typing is to writing.&#34;</Typography>
          <Box component={'div'} display={'flex'} gap={'1.5rem'} justifyContent={'center'} fontSize='2rem'>
                {info.socials.map((social, index) => (
                   <SocialIcon link={social.link} icon={social.icon} label={social.label} />
