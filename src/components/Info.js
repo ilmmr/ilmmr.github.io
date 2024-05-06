@@ -48,7 +48,7 @@ export const info = {
     intro: "Hi there, my name is Luís",
     short: "📍 Graduated in Braga, Portugal.",
     short1: "👨‍💻 Currently working @Bosch.",
-    bio1: "I am also an engineer from @UMinho working as a Software Architect.",
+    bio1: "I am also an engineer from @UMinho working as a Junior Embedded Software Architect.",
     bio2: "When it comes to computing, I am very enthusiastic with the appliance of Formal Methods in software development.",
     bio3: "I am Luís, a young adult that is driven by other life and culture experiences!",
     goal: "My goal is to keep extending my knowledge in Computer Science, especially in the study realm of AI and Formal Methods.",
