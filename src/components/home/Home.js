@@ -1,6 +1,6 @@
 import React from 'react';
 import Style from './Home.module.scss';
-import me from "./self2.JPG";
+import me from "./self2.png";
 import CV from "./CurriculumVitae.pdf"
 import classNames from 'classnames';
 import {Box, Stack, Typography} from "@mui/material";
